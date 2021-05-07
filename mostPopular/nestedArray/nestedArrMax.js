@@ -13,7 +13,6 @@ const nestedArrMax = arr => {
   const helpFlattening = (arr) => {
     //iterate the passed in array 
     arr.forEach((element) => {
-      
       //each iteration, check if the data type of the element is array;
       if (Array.isArray(element)) {
         //if it is, recursively return helpFlattening func with the element as an argument 
