@@ -1,5 +1,5 @@
 // Flattens a deeply nested array.
-// flatten([1, [2, 3, [4]]]); → [1, 2, 3, [4]]
+// flatten([1, [2, 3, [4]]]); → [1, 2, 3, 4]
 
 function flatten(array) {
 // 1. use while with a recursive helper function 
@@ -25,6 +25,6 @@ function flatten(array) {
   helpFlattening(array);
   //return flattenArr; 
   return flattenArr;
-//2. use reduce + concat with a recursive helper function 
+
 }
-console.log(flatten([1, [2, 3, [4]]]));
+console.log(flatten([1, [2, 3, [4]]])); //[1, 2, 3, 4]
